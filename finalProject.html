@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz Math</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="finalProject.css" />
+  </head>
+  <body>
+    <header id="head-box" class="hide">
+      <div id="question-number"></div>
+      <div>ANSWER THE QUESTION BELLOW CORRECTLY</div>
+    </header>
+    <div id="home-box" class="custom-box home">
+      <h3>Instruction</h3>
+      <p>Total number of question: 5</p>
+      <button type="button" class="btn" onclick="startQuiz()">Start</button>
+    </div>
+    <div id="quiz-box" class="custom-box hide">
+      <div id="question-text"></div>
+    </div>
+    <div id="answer-box" class="hide">
+      <div id="option-container"></div>
+    </div>
+    <div id="result-box" class="custom-box hide">
+      <h1>Quiz Result</h1>
+      <table>
+        <tr>
+          <td>Total Question</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Correct</td>
+          <td><span id="total-correct"></span></td>
+        </tr>
+        <tr>
+          <td>Wrong</td>
+          <td><span id="total-wrong"></span></td>
+        </tr>
+        <tr>
+          <td>Score</td>
+          <td><span id="total-score"></span></td>
+        </tr>
+      </table>
+      <button type="button" class="btn" onclick="playAgain()">Try Again</button>
+    </div>
+    <script src="finalProject.js"></script>
+  </body>
+</html>
